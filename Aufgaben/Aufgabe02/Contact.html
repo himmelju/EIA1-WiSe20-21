@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<style>
+body {
+        background-color: rgb(20, 20, 20);
+        font-family: Arial Black;
+    }    
+    
+    h1 {
+        color: rgb(253, 253, 253);
+        text-align: center;
+    }
+
+    h2 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: monospace;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .nav-list {
+       display: grid;
+       grid-auto-flow: column;
+       grid-gap: 20px;
+       margin-top: 20px;
+       margin-bottom: 30px;
+    }
+    .nav-list a{
+       display: block;
+       font-size: 25px;
+       color: rgb(42, 149, 192);
+
+    }  
+    .contact-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: rgb(42, 149, 192);
+        transition: transform 0.4s ease-out;
+        font-size: 28px;
+    }
+    .contact-btn:hover {
+        color: rgb(255, 255, 255);
+    } 
+</style>
+</head>
+<body>
+<header>
+<h>Contact</h>
+</header>  
+<nav id="navbar">
+    <ul class="nav-list">
+      <li>
+        <a href="./Mein_Portfolio.html">My Work</a>
+      </li>
+      <li>
+        <a href="./About_Me.html">About Me</a>
+      </li>
+      <li>
+        <a href="./Contact.html">Contact</a>
+      </li> 
+    </ul>
+</nav>
+<main>
+<h2>Find me on my Instagram Account or write me a mail</h2>
+<br><br>
+<div class="contact-link"></div>
+<a class="contact-btn"id="instagram" href="https://www.instagram.com/julian_xhx/" target="_blank">Instagram</a>
+<br><br>
+<a class="contact-btn" id="mail" href="mailto:julian.himmel@hs-furtwangen.de" target="_blank">Mail</a>
+</div>
+</main> 
+</body>
+</html>
