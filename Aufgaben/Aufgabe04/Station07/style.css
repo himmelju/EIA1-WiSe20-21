@@ -1,0 +1,69 @@
+.flexbox{ 
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+body{
+    background-image: url("./Images/Hintergrund.png");
+}
+.card{
+    position: relative;
+    background-image: url("./Images/Karte.png");
+    top: 200px;
+    left: 40px;
+}
+h1{
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    color: whitesmoke;
+}
+p{
+    position: absolute;
+    display: block;
+    color: whitesmoke;
+    left: 75px;
+    top: 150px;
+}
+
+
+.plant{
+    position: absolute;
+    top: -50px;
+    left: -70px;
+}
+#gifts{
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+}
+video{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+}
+.sparkle1{
+    position: absolute;
+    top: 290px;
+    left: 90px;
+}
+.sparkle2{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+.sparkle3{
+    position: absolute;
+    top: 100px;
+    left: 380px;
+}
+.sparkle4{
+    position: absolute;
+    top: 330px;
+    left: 290px;
+}
