@@ -1,0 +1,37 @@
+/*Allgemein*/
+
+body{
+    background-image: url(./Images/Hintergrund.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hintergrund*/
+
+.karte{
+    position: relative;
+}
+
+/*Banderole*/
+
+.banderole{
+    position: absolute;
+    top: 277px;
+    left: 370px;
+    z-index: 1;
+}
+
+/*Karteninhalt*/
+
+.video{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.youtubevideo{
+    width: 550px;
+    height: 350px;
+}
