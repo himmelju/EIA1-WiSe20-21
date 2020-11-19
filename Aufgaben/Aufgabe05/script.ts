@@ -61,7 +61,7 @@ var wachstumAustraliaKG = (australia2018 / australia2008) .toFixed(2);
 //Afrika
 console.log ('Emissionswerte von Afrika');
 console.log ('Die Emission von Afrika im Jahre 2018 ist: ' +africa2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Afrika damit' + prozentAfricaGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + prozentAfricaGes + '%');
 console.log ('Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAfricaP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAfricaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
@@ -69,7 +69,7 @@ console.log ('------------------------------------------------------------------
 //Süd Amerika
 console.log ('Emissionswerte von Süd Amerika');
 console.log ('Die Emission von Süd Amerika im Jahre 2018 ist: ' +southAmerica2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Süd Amerika damit' + prozentSouthAmericaGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Süd Amerika damit ' + prozentSouthAmericaGes + '%');
 console.log ('Für Süd A,erika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumSouthAmericaP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumSouthAmericaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
@@ -77,7 +77,7 @@ console.log ('------------------------------------------------------------------
 //Europa
 console.log ('Emissionswerte von Europa');
 console.log ('Die Emission von Europa im Jahre 2018 ist: ' +europe2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Europa damit' + prozentEuropeGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Europa damit ' + prozentEuropeGes + '%');
 console.log ('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumEuropeP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumEuropeKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
@@ -85,7 +85,7 @@ console.log ('------------------------------------------------------------------
 //Nord Amerika
 console.log ('Emissionswerte von Nord Amerika');
 console.log ('Die Emission von Nord Amerika im Jahre 2018 ist: ' +northAmerica2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht NordAmerika damit' + prozentNorthAmericaGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht NordAmerika damit ' + prozentNorthAmericaGes + '%');
 console.log ('Für Nord Amerika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumNorthAmericaP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumNorthAmericaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
@@ -93,7 +93,7 @@ console.log ('------------------------------------------------------------------
 //Asien
 console.log ('Emissionswerte von Asien');
 console.log ('Die Emission von Asien im Jahre 2018 ist: ' +asia2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Asien damit' + prozentAsiaGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Asien damit ' + prozentAsiaGes + '%');
 console.log ('Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAsiaP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAsiaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
@@ -101,7 +101,7 @@ console.log ('------------------------------------------------------------------
 //Australien
 console.log ('Emissionswerte von Australien');
 console.log ('Die Emission von Australien im Jahre 2018 ist: ' +australia2018 + 'kg Co2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Australien damit' + prozentAustraliaGes + '%');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Australien damit ' + prozentAustraliaGes + '%');
 console.log ('Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAustraliaP + '% verändert');
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAustraliaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
