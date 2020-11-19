@@ -22,20 +22,11 @@ var australia2018 = 2100.5;
 //Gesamtemissionen
 var gesEmission = africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018;
 //Africa
-var prozentAfricaGes = ((africa2018 / gesEmission) * 100).toFixed(2);
+var prozentAfricaGes = ((africa2018 / gesEmission) * 100).toFixed(2); //.tofixed(2) zum abrunden
 var wachstumAfricaP = (((africa2018 / africa2008) - 1) * 100).toFixed(2);
 var wachstumAfricaKG = (africa2018 - africa2008).toFixed(2);
 //South America
 var prozentSouthAmericaGes = ((southAmerica2018 / southAmerica2008) * 100).toFixed(2);
 var wachstumSouthAmericaP = (((southAmerica2018 / southAmerica2008) - 1) * 100).toFixed(2);
 var wachstumSouthAmericaKG = (southAmerica2018 - southAmerica2008).toFixed(2);
-//Europe
-var prozentEuropeGes = ((europe2018 / europe2008) * 100).toFixed(2);
-var wachstumEuropeP = (((europe2018 / europe2008) - 1) * 100).toFixed(2);
-var wachstumEuropeKG = (europe2018 - europe2008).toFixed(2);
-//North America
-var prozentNorthAmericaGes = ((northAmerica2018 / northAmerica2008) * 100).toFixed(2);
-var wachstumNorthAmericaP = (((northAmerica2018 / northAmerica2008) - 1) * 100).toFixed(2);
-var wachstumNorthAmericaKG = (northAmerica2018 - northAmerica2008).toFixed(2);
-//Asia
 //# sourceMappingURL=script.js.map
