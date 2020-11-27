@@ -54,3 +54,116 @@ var wachstumAsiaKG = (asia2018 - asia2008) .toFixed(2);
 var prozentAustraliaGes = ((australia2018 /australia2008) *100) .toFixed(2);
 var wachstumAustraliaP = (((australia2018 / australia2008) -1) * 100) .toFixed(2);
 var wachstumAustraliaKG = (australia2018 / australia2008) .toFixed(2);
+
+//DOM Manipulation 
+//Event listener: window.addEventListener('load', function () { document.querySelector (".---") .addEventListener ("click", function ()
+//{ domManipulatior ("---", ---, ---); }); });
+
+//Europa
+window.addEventListener('load', function() {
+    document.querySelector(".europe") .addEventListener ("click", function() {
+        domManipulator ("Europa", europe2018, europe2008);
+    });
+});
+
+//Nord Amerika
+window.addEventListener('load', function() {
+    document.querySelector(".northamerica") .addEventListener("click", function(){
+        domManipulator ("Nord Amerika", northAmerica2018, northAmerica2008);
+    });
+});
+
+//Süd Amerika
+window.addEventListener('load', function() {
+    document.querySelector(".southamerica") .addEventListener("click", function() {
+        domManipulator("Süd Amerika", southAmerica2018, southAmerica2008);
+    });
+});
+
+//Afrika
+window.addEventListener('load', function () {
+    document.querySelector("africa") .addEventListener("click", function() {
+        domManipulator("Afrika", africa2018, africa2008);
+    });
+});
+
+//Asien
+window.addEventListener('load', function() {
+    document.querySelector("asia") .addEventListener("click", function() {
+        domManipulator("Asien", asia2018, asia2008);
+    });
+});
+
+//Australien
+window.addEventListener('load', function() {
+    document.querySelector("australia") .addEventListener("click", function() {
+        domManipulator("Australien", australia2018, australia2008);
+    });
+});
+
+
+//Funktion Anfang
+
+function domManipulator (kontinent, kontinent2018, kontinent2008) {
+
+}
+
+//Funktion Ende
+
+//Text Website Berechnungen Anfang
+
+
+
+//Konsolen Ausgabe Anfang
+//Berechnungen
+
+//Afrika
+console.log ('Emissionswerte von Afrika');
+console.log ('Die Emission von Afrika im Jahre 2018 ist: ' +africa2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + prozentAfricaGes + '%');
+console.log ('Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAfricaP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAfricaKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Süd Amerika
+console.log ('Emissionswerte von Süd Amerika');
+console.log ('Die Emission von Süd Amerika im Jahre 2018 ist: ' +southAmerica2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Süd Amerika damit ' + prozentSouthAmericaGes + '%');
+console.log ('Für Süd A,erika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumSouthAmericaP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumSouthAmericaKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Europa
+console.log ('Emissionswerte von Europa');
+console.log ('Die Emission von Europa im Jahre 2018 ist: ' +europe2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Europa damit ' + prozentEuropeGes + '%');
+console.log ('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumEuropeP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumEuropeKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Nord Amerika
+console.log ('Emissionswerte von Nord Amerika');
+console.log ('Die Emission von Nord Amerika im Jahre 2018 ist: ' +northAmerica2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht NordAmerika damit ' + prozentNorthAmericaGes + '%');
+console.log ('Für Nord Amerika hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumNorthAmericaP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumNorthAmericaKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Asien
+console.log ('Emissionswerte von Asien');
+console.log ('Die Emission von Asien im Jahre 2018 ist: ' +asia2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Asien damit ' + prozentAsiaGes + '%');
+console.log ('Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAsiaP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAsiaKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Australien
+console.log ('Emissionswerte von Australien');
+console.log ('Die Emission von Australien im Jahre 2018 ist: ' +australia2018 + 'kg Co2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Australien damit ' + prozentAustraliaGes + '%');
+console.log ('Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um: ' + wachstumAustraliaP + '% verändert');
+console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAustraliaKG + 'kg CO2')
+console.log ('-----------------------------------------------------------------------------------------------');
+
+//Konsolen Ausgabe Ende
+//sourceMappingURL=script2.js.map
