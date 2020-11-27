@@ -55,7 +55,7 @@ var prozentAustraliaGes = ((australia2018 /australia2008) *100) .toFixed(2);
 var wachstumAustraliaP = (((australia2018 / australia2008) -1) * 100) .toFixed(2);
 var wachstumAustraliaKG = (australia2018 / australia2008) .toFixed(2);
 
-//DOM Manipulation 
+//DOM Manipulation Anfang 
 //Event listener: window.addEventListener('load', function () { document.querySelector (".---") .addEventListener ("click", function ()
 //{ domManipulatior ("---", ---, ---); }); });
 
@@ -101,19 +101,35 @@ window.addEventListener('load', function() {
     });
 });
 
+//Dom Manipulation Ende
 
 //Funktion Anfang
 
-function domManipulator (kontinent, kontinent2018, kontinent2008) {
+function domManipulator (kontinent, kontinent2018, kontinent2008) { //Anfang geschweifte Klammer
 
-}
 
 //Funktion Ende
 
 //Text Website Berechnungen Anfang
 
+document.querySelector(".titleRegion") .innerHTML = kontinent;
+document.querySelector(".titleRegion2") .innerHTML = kontinent;
+document.querySelector("absoluteEmission") .innerHTML = kontinent2018.toFixed(2) + "CO2 kg";
+document.querySelector("totalEmission") .innerHTML = (100/ (gesEmission /kontinent2018)) .toFixed(2) + "%";
+document.querySelector("growthPercentEmission") .innerHTML = (((kontinent2018 / kontinent2008) -1) *100) .toFixed(2) + "%";
+document.querySelector("growthKilogrammEmission") .innerHTML = (kontinent2018 - kontinent2008) .toFixed(2) + "CO2 kg";
+
+//Text Website Berechnungen Ende
+
+//Diagramm Veränderungen
+
+document.querySelector('.chart') .setAttribute('style', 'height' + (100 / (gesEmission / kontinent2018)) .toFixed(2) + "%");
+
+} //Ende geschweifte Klammer
 
 
+
+//Dom Manipulation Anfang
 //Konsolen Ausgabe Anfang
 //Berechnungen
 
@@ -165,5 +181,5 @@ console.log ('Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um
 console.log ('2018 im Vergleich zu 2008 sind das ' + wachstumAustraliaKG + 'kg CO2')
 console.log ('-----------------------------------------------------------------------------------------------');
 
-//Konsolen Ausgabe Ende
+//Konsolen Ausgabe und Dom Manipulation Ende
 //sourceMappingURL=script2.js.map
