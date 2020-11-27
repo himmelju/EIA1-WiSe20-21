@@ -25,36 +25,6 @@ var australia2018 = 2100.5;
 //Gesamtemissionen
 var gesEmission = africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018;
 
-//Africa
-var prozentAfricaGes = ((africa2018 / gesEmission) * 100) .toFixed(2); //.tofixed(2) zum abrunden
-var wachstumAfricaP = (((africa2018 / africa2008) -1) * 100) .toFixed(2);
-var wachstumAfricaKG = (africa2018 - africa2008) .toFixed(2);
-
-//South America
-var prozentSouthAmericaGes = ((southAmerica2018 / southAmerica2008) * 100) .toFixed(2);
-var wachstumSouthAmericaP = (((southAmerica2018 / southAmerica2008) -1) *100) .toFixed(2);
-var wachstumSouthAmericaKG = (southAmerica2018 - southAmerica2008) .toFixed(2);
-
-//Europe
-var prozentEuropeGes = ((europe2018 / europe2008) * 100) .toFixed(2);
-var wachstumEuropeP = (((europe2018 / europe2008) -1) *100) .toFixed(2);
-var wachstumEuropeKG = (europe2018 - europe2008) .toFixed(2);
-
-//North America 
-var prozentNorthAmericaGes = ((northAmerica2018 - northAmerica2008) *100) .toFixed(2);
-var wachstumNorthAmericaP = (((northAmerica2018 / northAmerica2008) -1) * 100) .toFixed(2);
-var wachstumNorthAmericaKG = (northAmerica2018 - northAmerica2008) .toFixed(2);
-
-//Asia
-var prozentAsiaGes = ((asia2018 - asia2008) *100) .toFixed(2);
-var wachstumAsiaP = (((asia2018 / asia2008) -1) * 100) .toFixed(2);
-var wachstumAsiaKG = (asia2018 - asia2008) .toFixed(2);
-
-//Australia
-var prozentAustraliaGes = ((australia2018 /australia2008) *100) .toFixed(2);
-var wachstumAustraliaP = (((australia2018 / australia2008) -1) * 100) .toFixed(2);
-var wachstumAustraliaKG = (australia2018 / australia2008) .toFixed(2);
-
 //DOM Manipulation Anfang 
 //Event listener: window.addEventListener('load', function () { document.querySelector (".---") .addEventListener ("click", function ()
 //{ domManipulatior ("---", ---, ---); }); });
@@ -82,21 +52,21 @@ window.addEventListener('load', function() {
 
 //Afrika
 window.addEventListener('load', function () {
-    document.querySelector("africa") .addEventListener("click", function() {
+    document.querySelector(".africa") .addEventListener("click", function() {
         domManipulator("Afrika", africa2018, africa2008);
     });
 });
 
 //Asien
 window.addEventListener('load', function() {
-    document.querySelector("asia") .addEventListener("click", function() {
+    document.querySelector(".asia") .addEventListener("click", function() {
         domManipulator("Asien", asia2018, asia2008);
     });
 });
 
 //Australien
 window.addEventListener('load', function() {
-    document.querySelector("australia") .addEventListener("click", function() {
+    document.querySelector(".australia") .addEventListener("click", function() {
         domManipulator("Australien", australia2018, australia2008);
     });
 });
@@ -105,27 +75,20 @@ window.addEventListener('load', function() {
 
 //Funktion Anfang
 
-function domManipulator (kontinent, kontinent2018, kontinent2008) { //Anfang geschweifte Klammer
+function domManipulator (kontinent:string, kontinent2018:number, kontinent2008:number) { 
 
 
-//Funktion Ende
+document.querySelector("#titleRegion") .innerHTML = kontinent;
+document.querySelector("#titleRegion2") .innerHTML = kontinent;
+document.querySelector("#absoluteEmission") .innerHTML = kontinent2018.toFixed(2) + " CO2 kg";
+document.querySelector("#totalEmission") .innerHTML = (100/ (gesEmission /kontinent2018)) .toFixed(2) + "%";
+document.querySelector("#growthPercentEmission") .innerHTML = (((kontinent2018 / kontinent2008) -1) *100) .toFixed(2) + "%";
+document.querySelector("#growthKilogrammEmission") .innerHTML = (kontinent2018 - kontinent2008) .toFixed(2) + " CO2 kg";
 
-//Text Website Berechnungen Anfang
 
-document.querySelector(".titleRegion") .innerHTML = kontinent;
-document.querySelector(".titleRegion2") .innerHTML = kontinent;
-document.querySelector("absoluteEmission") .innerHTML = kontinent2018.toFixed(2) + "CO2 kg";
-document.querySelector("totalEmission") .innerHTML = (100/ (gesEmission /kontinent2018)) .toFixed(2) + "%";
-document.querySelector("growthPercentEmission") .innerHTML = (((kontinent2018 / kontinent2008) -1) *100) .toFixed(2) + "%";
-document.querySelector("growthKilogrammEmission") .innerHTML = (kontinent2018 - kontinent2008) .toFixed(2) + "CO2 kg";
+document.querySelector('.chart') .setAttribute('style', 'height:' + (100 / (gesEmission / kontinent2018)) .toFixed(2) + "%");
 
-//Text Website Berechnungen Ende
-
-//Diagramm Veränderungen
-
-document.querySelector('.chart') .setAttribute('style', 'height' + (100 / (gesEmission / kontinent2018)) .toFixed(2) + "%");
-
-} //Ende geschweifte Klammer
+} 
 
 
 
