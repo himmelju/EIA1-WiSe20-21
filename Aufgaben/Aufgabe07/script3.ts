@@ -18,35 +18,35 @@ document.querySelector(".pad1") .addEventListener("click", function() {
     playSample(0);
 });
 
-document.querySelector("pad2") .addEventListener("click", function() {
+document.querySelector(".pad2") .addEventListener("click", function() {
     playSample(1);
 });
 
-document.querySelector("pad3") .addEventListener("click", function() {
+document.querySelector(".pad3") .addEventListener("click", function() {
     playSample(2);
 });
 
-document.querySelector("pad4") .addEventListener("click", function() {
+document.querySelector(".pad4") .addEventListener("click", function() {
     playSample(3);
 });
 
-document.querySelector("pad5") .addEventListener("click", function() {
+document.querySelector(".pad5") .addEventListener("click", function() {
     playSample(4);
 });
 
-document.querySelector("pad6") .addEventListener("click", function() {
+document.querySelector(".pad6") .addEventListener("click", function() {
     playSample(5);
 });
 
-document.querySelector("pad7") .addEventListener("click", function() {
+document.querySelector(".pad7") .addEventListener("click", function() {
     playSample(6);
 });
 
-document.querySelector("pad8") .addEventListener("click", function() {
+document.querySelector(".pad8") .addEventListener("click", function() {
     playSample(7);
 });
 
-document.querySelector("pad9") .addEventListener("click", function() {
+document.querySelector(".pad9") .addEventListener("click", function() {
     playSample(8);
 });
 
