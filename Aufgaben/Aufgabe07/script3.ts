@@ -58,3 +58,19 @@ function playSample(i) {
 
 //QuerySelector Play Button play und click function
 
+document.querySelector(".playButton") .addEventListener("click", function() {
+    setInterval(function() {
+        playButton();
+    }, 500); 
+});
+
+//Funktion des PlayButton
+
+function playButton() {
+    drumPads[5].play();
+    drumPads[5].play();
+    drumPads[8].play();
+    drumPads[5].play();
+    drumPads[5].play();
+    drumPads[4].play();
+}
