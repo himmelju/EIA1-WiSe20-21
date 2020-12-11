@@ -57,6 +57,33 @@ html, body {
     border: 3px groove #ffcc99;
 }
 
-.playButton {
+/*Buttons*/
+
+.buttons{
+    display: flex;
+    position: relative;
+    height: 80px;
+}
+
+ .fas{
     cursor: pointer;
+    color: #FFFFFF;
+    margin: 20px;
+    font-size: 75px;
+}
+
+
+.fa-play, .fa-pause{
+    position: absolute;
+    left:0;
+    height: 0;   
+}
+
+.inactive{
+    visibility: hidden;
+    cursor: none;
+}
+
+.active{
+    color: red;
 }
