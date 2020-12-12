@@ -1,63 +1,54 @@
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    text-align: center;
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #000000;
     height: 100%;
     display: flex;
-    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   overflow: hidden; 
-}
-
-.pad {
-    position: absolute;
-    top: 0%;
-    display: flex;
-    height: 500px;
-    width: 500px;
-    justify-content: center;
-    flex-wrap:wrap;
-}
-.box {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.box:hover {
-    opacity: 60%;
+.container{
+    width: 500px;
+    height: 580px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container div{
+    border-radius: 10%;
+}
+
+.sound1, .sound2, .sound3, .sound4{
     cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-color: #1624a1;
 }
 
-.box:active {
-    background-color: darken (8%);
-    transform: scale(0.8);
-    transition: all .01;
+.sound5, .sound6{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-color: #1ec5c5;
 }
 
-.pad1, .pad2, .pad3 {
-    background: linear-gradient(to top, #4da6ff, #b3d9ff);
-    border: 3px groove #b3d9ff;
-} 
-
-.pad4, .pad5, .pad6, .pad7 {
-    background: linear-gradient(to top, #ff99dd, #ff00ae);
-    border: 3px groove #ff00ae;
+.sound7, .sound8, .sound9{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-color: #b44a19;
 }
 
-.pad8, .pad9 {
-    background: linear-gradient(to top, #ff9933, #ffcc99);
-    border: 3px groove #ffcc99;
-}
 
-/*Buttons*/
+/* Buttons*/
 
 .buttons{
     display: flex;

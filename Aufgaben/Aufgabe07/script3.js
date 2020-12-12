@@ -1,4 +1,4 @@
-//Variablen drumPads zu String bei Sounds 
+/*//Variablen drumPads zu String bei Sounds
 var drumPads = [];
 drumPads[0] = new Audio('./assets/A.mp3');
 drumPads[1] = new Audio('./assets/C.mp3');
@@ -57,4 +57,5 @@ function playButton() {
     drumPads[5].play();
     drumPads[4].play();
 }
+//# sourceMappingURL=script3.js.map*/ 
 //# sourceMappingURL=script3.js.map
