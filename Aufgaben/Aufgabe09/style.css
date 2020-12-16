@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+    background-color: #5abdf7;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: auto;
+}
+
+.main {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
