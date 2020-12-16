@@ -6,7 +6,7 @@ html {
 }
 
 .main {
-    width: 450px;
+    width: 430px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,5 +16,62 @@ html {
 h1 {
     text-align: center;
     color: #ffffff;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px
+}
+
+input [type="text"] {
+    width: 360px;
+    height: 35px;
+    outline: 0;
+    border: none;
+    font-size: 1.7em;
+    background-color: #ffffff;
+    color: #0c2363;
+}
+
+button {
+    font-size: 2.0em;
+    color: #0b2230;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    width: 60px;
+    float: right;
+    text-align: right;
+}
+
+.taskBoard {
+    background-color: #ffffff;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    display: block;
+}
+
+.is-hidden {
+    display: none !important; 
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid #0c2363;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    color: #51b1f1;
+}
+
+a {
+    float: right;
+    text-align: right;
+    color: #961313;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
