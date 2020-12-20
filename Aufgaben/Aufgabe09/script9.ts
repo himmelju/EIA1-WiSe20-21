@@ -36,6 +36,12 @@ function addTask(task) {
     for (var i = 0; i < doTodoElements.length; i++) {
         deleteTodoElements[i].addEventListener("click", deleteTask, false); // deleteTask wird nur durch Klich ausgeführt
     }
+    numberoflistelements();
+}
+
+// Anzeigen, wie viele todos noch existieren
+function numberoflistelements() {
+    document.getElementById("number").innerHTML = "elements left: " + doTodoElements.length;
 }
 
 // ToDo löschen - // DOM - Manipulation durch Document.adoptNode()!
@@ -47,6 +53,7 @@ function deleteTask() {
     var remove = this.parentNode;
     var parentNode = remove.parentNode;
     parentNode.removeChild(remove); // Das nächste Kind wird entfernt
+    numberoflistelements();
 }
 
 // ToDo ankreuzen

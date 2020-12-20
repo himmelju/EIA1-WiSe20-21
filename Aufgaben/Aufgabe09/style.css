@@ -85,7 +85,10 @@ html{
     color: #830a0a;
   }
 
-   
+  #number {
+    color: #1b394b;
+    font-size: medium;
+  }
 
   @media (max-width: 500px) {
     .main {
