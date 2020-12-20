@@ -11,11 +11,12 @@ function loadEvents() {
 // Funktion: Absenden
 var input = document.querySelector("input");
 function submit(e) {
-    e.preventDefault(); // Event preventDefault übernimmt im DOM Aufgabe des Aufrufs return false; um die ursprüngliche Aktion des Browsers bei einem HTML-Element außer Kraft zu setzen
+    e.preventDefault(); // Javascript Event preventDefault übernimmt im DOM die Aufgabe des Aufrufs return false;, um die ursprüngliche Aktion des Browsers bei einem HTML-Element außer Kraft zu setzen.
     if (input.value != " ")
         addTask(input.value);
-    input.value = " "; // Das Textfeld wird wieder leer
+    input.value = " "; // Das Textfeld wird wieder leer!
 }
+
 // Tasks hinzufügen (let - Variablen in die Funktion rein (sollen nur in dem Bereich gültig sein - im Deklarationsbereich - Bei addTask-Funktion also erst erscheinen sollen)
 //Variablen
 var doTodoElements = document.getElementsByClassName("doTodo");
@@ -29,12 +30,12 @@ function addTask(task) {
     if (taskboard.classList.contains("is-hidden"))
         taskboard.classList.remove("is-hidden"); // Aufgabenboard erscheint
     li.innerHTML = "<span class=\"delete\"><i class=\"fas fa-trash-alt\"></i></span><input class=\"doTodo\" type=\"checkbox\"><label>" + task + "</label>"; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht (Ist dann Javascript zwischen den geschweiften Klammern). Checkbox hat immer ein Label (In dem Fall Inhalt meiner Todo) Tamplate Literals -> durch ` ` kann ich HTML dazwischen schreiben
-    ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann
+    ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann!
     for (var i = 0; i < doTodoElements.length; i++) {
         doTodoElements[i].addEventListener("click", tickTask, false);
     }
     for (var i = 0; i < doTodoElements.length; i++) {
-        deleteTodoElements[i].addEventListener("click", deleteTask, false); // deleteTask wird nur durch Klich ausgeführt
+        deleteTodoElements[i].addEventListener("click", deleteTask, false); // delete Task wird nur durch Klich ausgeführt
     }
     numberoflistelements();
 }
