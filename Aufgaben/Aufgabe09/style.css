@@ -1,77 +1,101 @@
-html {
+html{
     height: 100%;
-    background-color: #5abdf7;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./Images/background.jpg");
+    font-family: sans-serif;
     background-size: auto;
-}
-
-.main {
-    width: 430px;
+  }
+  
+  .main{
+    width: 450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-}
-
-h1 {
+  }
+  h1{
     text-align: center;
-    color: #ffffff;
-}
-
-form {
-    background-color: #ffffff;
-    padding: 20px
-}
-
-input [type="text"] {
-    width: 360px;
-    height: 35px;
+    color: #fff;
+  }
+  form{
+    background-color: #fff;
+    padding: 15px;
+  }
+  input[type="text"]{
+    width: 310px;
+    height: 30px;
     outline: 0;
     border: none;
-    font-size: 1.7em;
-    background-color: #ffffff;
-    color: #0c2363;
-}
-
-button {
+    font-size: 1.5em;
+    background: #fff;
+    color: #000000;
+  }
+  button{
     font-size: 2.0em;
-    color: #0b2230;
-    background-color: #ffffff;
-    outline: none;
+    color: #03434e;
+    background-color: #fff;
+    outline: 0;
     border: none;
     width: 60px;
-    float: right;
-    text-align: right;
-}
-
-.taskBoard {
-    background-color: #ffffff;
-    margin-top: 25px;
+  
+  }
+  .tasksBoard{
+    background-color: #fff;
+    margin-top: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 40px;
     display: block;
-}
+  
+  }
 
-.is-hidden {
-    display: none !important; 
-}
+  .is-hidden { 
+    display: none !important;
 
-ul {
+  }
+
+  ul {
     list-style: none;
-}
+  }
 
-li {
-    border-bottom: 1px solid #0c2363;
+  li {
+    border-bottom: 1px solid #000000;
     padding-bottom: 15px;
-    font-size: 1.4em;
-    color: #51b1f1;
-}
+    padding-top: 15px;
+    font-size: 1.3em;
+    color: #000000;
+  }
 
-a {
+  a {
     float: right;
     text-align: right;
-    color: #961313;
+    color: #830a0a;
     font-size: 1.1em;
     cursor: pointer;
-}
+  }
 
+  .delete {
+    height: 5px;
+    width: 5px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .fa-trash-alt {
+    color: #830a0a;
+  }
+
+   
+
+  @media (max-width: 500px) {
+    .main {
+      margin: auto;
+      width: 100%;
+    }
+    input[type="text"] {
+      width: 80%;
+    }
+    button {
+      width: 10%;
+    }
+  }
