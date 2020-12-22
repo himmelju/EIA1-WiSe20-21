@@ -1,17 +1,17 @@
 //Variable neue Aufgabe Eingabefeld
-var NewTask = document.getElementById("NewTask");
+var Task = document.getElementById("NewTask");
 //Variable Aufgaben zu erledigen übrig
 var number = 0;
 //Funktion der Entertaste
-NewTask.addEventListener("keypress", function (e) {
+Task.addEventListener("keypress", function (e) {
     if (e.key == "Enter") {
-        addNewTask();
+        addTask();
         deleteAll();
-        NewTask.value = "";
+        Task.value = "";
     }
 });
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
-function addNewTask(task) {
+function addTask(task) {
     number++;
     updateNumber();
 }
