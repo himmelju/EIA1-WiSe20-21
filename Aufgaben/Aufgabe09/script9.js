@@ -4,9 +4,9 @@ var Task = document.getElementById("NewTask");
 var number = 0;
 //Funktion der Entertaste
 Task.addEventListener("keypress", function (e) {
-    if (Task.value != "" && e.key == "Enter") {
+    if (e.key == "Enter") {
         addTask();
-        resetInputField();
+        Task.value = "";
     }
 });
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
@@ -29,10 +29,6 @@ function addTask() {
     });
     number++;
     updateNumber();
-}
-//Eingabefeld nach drücken der Entertaste wieder leeren
-function resetInputField() {
-    Task.value = "";
 }
 //Funktion Menge der Aufagben die noch zu erledigen sind anzuzeigen
 function updateNumber() {

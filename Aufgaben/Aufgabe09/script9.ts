@@ -1,5 +1,5 @@
 //Variable neue Aufgabe Eingabefeld
-var Task = document.getElementById("NewTask");
+var Task:HTMLInputElement = (document.getElementById("NewTask") as HTMLInputElement);
 
 //Variable Aufgaben zu erledigen übrig
 var number = 0;
@@ -7,13 +7,11 @@ var number = 0;
 //Funktion der Entertaste
 
 Task.addEventListener("keypress", function (e) {
-    if (Task.value !="" && e.key == "Enter"){
-        addTask();
-        resetInputField();
+    if (e.key == "Enter") {
+      addTask();
+      Task.value = "";
     }
 });
-
-
 
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
 function addTask() {
@@ -24,7 +22,7 @@ function addTask() {
     myText.className = "inhalt";
     myText.innerHTML = Task.value;
 
-    var myCheckbox = document.createElement("checkbox");
+    var myCheckbox:HTMLInputElement = (document.createElement("checkbox") as HTMLInputElement);
     myCheckbox.className = "checkClick";
     myCheckbox.type = "checkbox";
 
@@ -41,11 +39,6 @@ function addTask() {
     });
     number++;
     updateNumber();
-}
-
-//Eingabefeld nach drücken der Entertaste wieder leeren
-function resetInputField() {
-    Task.value = "";
 }
 
 //Funktion Menge der Aufagben die noch zu erledigen sind anzuzeigen
