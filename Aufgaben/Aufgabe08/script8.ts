@@ -110,4 +110,4 @@ function playSchleife(b) {
         clearInterval(myInterval);
     }
 }
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=script8.js.map

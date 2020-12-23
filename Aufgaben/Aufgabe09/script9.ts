@@ -9,7 +9,6 @@ var number = 0;
 Task.addEventListener("keypress", function (e) {
     if (e.key == "Enter") {
         addTask();
-        deleteAll();
         Task.value = "";
     
     }
@@ -17,25 +16,43 @@ Task.addEventListener("keypress", function (e) {
 
 
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
-function addTask(task) {
+function addTask() {
 
- 
+    var main = document.createElement("inhalt");
 
+    var myText = document.createElement("text");
+    myText.className = "inhalt";
+    myText.innerHTML = Task.value;
 
+    var myCheckbox = document.createElement("checkbox");
+    myCheckbox.className = "checkClick";
+    myCheckbox.type = "checkbox";
+
+    var mytrashButton = document.createElement("trash");
+    mytrashButton.className = "fas fa-trash-alt";
+
+    document.getElementById("form") .appendChild(main);
+    main.appendChild(myCheckbox);
+    main.appendChild(myText);
+    main.appendChild(mytrashButton);
+
+    mytrashButton.addEventListener("click", function() {
+        deleteTask(main);
+    });
     number++;
     updateNumber();
 }
 
 //Funktion Menge der Aufagben die noch zu erledigen sind anzuzeigen
 function updateNumber() {
-    document.getElementById("TasksLeft").innerHTML = number + "Aufgaben übrig";
+    document.getElementById("TasksLeft").innerText = number + "Aufgaben übrig";
 }
 
-//delete All Button Funktion
-function deleteAll() {
-    this.parentElement.remove()
+//delete one Task
+function deleteTask(main) {
+    main.remove();
+    number--;
     updateNumber();
 }
 
-
-//# sourceMappingURL=TypeScript.js.map
+//# sourceMappingURL=script9.js.map

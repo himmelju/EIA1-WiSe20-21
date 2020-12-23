@@ -1,11 +1,11 @@
-html{
+html, body{
     height: 100%;
     background-image: url("./Images/background.jpg");
     font-family: sans-serif;
-    background-size: auto;
+    background-size: cover;
   }
   
-  .body{
+  .main{
     width: 402px;
     display: flex;
     justify-content: center;
@@ -13,27 +13,34 @@ html{
     margin: auto;
     display: block;
   }
-  h1, h2{
+
+  h1{
     text-align: center;
     color: #fff;
   }
 
-    button{
-    font-size: 2.0em;
-    color: #03434e;
-    background-color: #fff;
-    outline: 0;
-    border: none;
-    width: 60px;
-    margin-left: 320px;
-    margin-bottom: 30px;
-  
+  h2{
+    text-align: left;
+    color: #fff;
+  }
+
+  .action {
+    display: block;
+    margin-top: 30px;
+  }
+
+
+  #Task{
+    text-align: left;
+    font-family: sans-serif;
+    line-height: 50%;
   }
 
   form{
     background-color: #fff;
     padding: 15px;
   }
+
   #NewTask[type="text"]{
     width: 400px;
     height: 30px;
@@ -44,48 +51,36 @@ html{
     color: #000000;
   }
 
-  .is-hidden { 
-    display: none !important;
-
+  a:hover{
+    opacity: 80%;
   }
 
-  ul {
-    list-style: none;
+  .fas {
+    color: #830a0a;
+    float: right;
   }
 
-  li {
-    border-bottom: 1px solid #000000;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-size: 1.3em;
+  .fas:hover{
+    opacity: 60%;
+  }
+
+  #deleteButton{
+    display: none;
+  }
+
+  .checkbox {
+    text-align: left;
     color: #000000;
   }
-
-  a {
-    float: right;
-    text-align: right;
-    color: #830a0a;
-    font-size: 1.1em;
-    cursor: pointer;
+  
+  .checkbox:checked + .NewTask {
+    text-decoration: line-through;
   }
-
-  .delete {
-    height: 5px;
-    width: 5px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
+  
+  #checkbox {
+    display: none;
   }
-
-  .fa-trash-alt {
-    color: #830a0a;
-  }
-
-  #number {
-    color: #ffffff;
-    font-size: medium;
-  }
-
+  
   @media (max-width: 500px) {
     .main {
       margin: auto;
