@@ -68,12 +68,12 @@ html, body{
     display: none;
   }
 
-  .checkbox {
+  #checkbox {
     text-align: left;
     color: #000000;
   }
   
-  .checkbox:checked + .NewTask {
+  #checkbox:checked + .NewTask {
     text-decoration: line-through;
   }
   

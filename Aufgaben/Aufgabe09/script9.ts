@@ -45,7 +45,7 @@ function addTask() {
 
 //Funktion Menge der Aufagben die noch zu erledigen sind anzuzeigen
 function updateNumber() {
-    document.getElementById("TasksLeft").innerText = number + "Aufgaben übrig";
+    document.getElementById("TasksLeft").innerText = "Aufgaben übrig: " + number;
 }
 
 //delete one Task
