@@ -12,18 +12,20 @@ Task.addEventListener("keypress", function (e) {
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
 function addTask() {
     var main = document.createElement("inhalt");
+    main.className = "inhalt";
     var myText = document.createElement("text");
-    myText.className = "inhalt";
+    myText.className = "text";
     myText.innerHTML = Task.value;
     var myCheckbox = document.createElement("checkbox");
-    myCheckbox.className = "checkClick";
+    myCheckbox.className = "checkbox";
     myCheckbox.type = "checkbox";
     var mytrashButton = document.createElement("trash");
     mytrashButton.className = "fas fa-trash-alt";
-    document.getElementById("form").appendChild(main);
+    var form = document.getElementById("form");
     main.appendChild(myCheckbox);
     main.appendChild(myText);
     main.appendChild(mytrashButton);
+    form.appendChild(main);
     mytrashButton.addEventListener("click", function () {
         deleteTask(main);
     });

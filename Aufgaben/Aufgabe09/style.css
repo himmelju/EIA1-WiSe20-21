@@ -6,12 +6,11 @@ html, body{
   }
   
   .main{
-    width: 402px;
+    width: 400px;
     display: flex;
-    justify-content: center;
+    position: relative;
     flex-direction: column;
     margin: auto;
-    display: block;
   }
 
   h1{
@@ -24,25 +23,23 @@ html, body{
     color: #fff;
   }
 
-  .action {
-    display: block;
-    margin-top: 30px;
-  }
-
-
-  #Task{
-    text-align: left;
-    font-family: sans-serif;
-    line-height: 50%;
-  }
-
   form{
-    background-color: #fff;
-    padding: 15px;
+    width: 400px;
+    padding: 4px;
+    margin-top: 20px;
+    align-items: left;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+    position: relative;
   }
 
-  #NewTask[type="text"]{
-    width: 400px;
+  input[type="text"]{
+    text-align: center;
+    width: 410px;
+    padding: 4px;
     height: 30px;
     outline: 0;
     border: none;
@@ -51,45 +48,28 @@ html, body{
     color: #000000;
   }
 
-  a:hover{
-    opacity: 80%;
+  form .checkbox {
+    color: #d31515;
+    position: absolute;
+    left: 0%;
+  }
+
+  form .checkbox:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
   }
 
   .fas {
-    color: #830a0a;
-    float: right;
+    color: #ffffff;
+    position: absolute;
+    right: 0%;
   }
 
   .fas:hover{
-    opacity: 60%;
+    color: rgb(148, 16, 16);
   }
 
   #deleteButton{
     display: none;
   }
-
-  #checkbox {
-    text-align: left;
-    color: #000000;
-  }
   
-  #checkbox:checked + .NewTask {
-    text-decoration: line-through;
-  }
-  
-  #checkbox {
-    display: none;
-  }
-  
-  @media (max-width: 500px) {
-    .main {
-      margin: auto;
-      width: 100%;
-    }
-    input[type="text"] {
-      width: 80%;
-    }
-    button {
-      width: 10%;
-    }
-  }
