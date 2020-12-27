@@ -48,13 +48,13 @@ html, body{
     color: #000000;
   }
 
-  form .checkbox {
+  form .myCheckbox {
     color: #d31515;
     position: absolute;
     left: 0%;
   }
 
-  form .checkbox:hover {
+  form .myCheckbox:hover {
     color: rgb(255, 255, 255);
     cursor: pointer;
   }

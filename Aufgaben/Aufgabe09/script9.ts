@@ -24,7 +24,7 @@ function addTask() {
     myText.innerHTML = Task.value;
 
     var myCheckbox:HTMLInputElement = (document.createElement("checkbox") as HTMLInputElement);
-    myCheckbox.className = "checkbox";
+    myCheckbox.className = "myCheckbox";
     myCheckbox.type = "checkbox";
 
     var mytrashButton = document.createElement("trash");
