@@ -16,9 +16,10 @@ function addTask() {
     var myText = document.createElement("text");
     myText.className = "text";
     myText.innerHTML = Task.value;
-    var myCheckbox = document.createElement("checkbox");
+    var myCheckbox = document.createElement("input");
     myCheckbox.className = "myCheckbox";
-    myCheckbox.type = "checkbox";
+    myCheckbox.setAttribute("type", "checkbox");
+    myCheckbox.setAttribute("id", "check");
     var mytrashButton = document.createElement("trash");
     mytrashButton.className = "fas fa-trash-alt";
     var form = document.getElementById("form");

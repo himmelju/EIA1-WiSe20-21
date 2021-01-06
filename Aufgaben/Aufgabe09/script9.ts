@@ -13,19 +13,21 @@ Task.addEventListener("keypress", function (e) {
     }
 });
 
+
 //Funktion neue Aufgabe hinzufügen und Variablen deklarieren
 function addTask() {
 
-    var main:HTMLDivElement = (document.createElement("inhalt")as HTMLDivElement);
+    var main:HTMLDivElement = (document.createElement("inhalt") as HTMLDivElement);
     main.className ="inhalt";
 
-    var myText: HTMLLabelElement = (document.createElement("text")as HTMLLabelElement);
+    var myText: HTMLLabelElement = (document.createElement("text") as HTMLLabelElement);
     myText.className = "text";
     myText.innerHTML = Task.value;
 
-    var myCheckbox:HTMLInputElement = (document.createElement("checkbox") as HTMLInputElement);
+    var myCheckbox:HTMLInputElement = (document.createElement("input") as HTMLInputElement);
     myCheckbox.className = "myCheckbox";
-    myCheckbox.type = "checkbox";
+    myCheckbox.setAttribute("type", "checkbox");
+    myCheckbox.setAttribute("id", "check");
 
     var mytrashButton = document.createElement("trash");
     mytrashButton.className = "fas fa-trash-alt";
@@ -37,10 +39,10 @@ function addTask() {
     main.appendChild(mytrashButton);
     form.appendChild(main);
 
-
     mytrashButton.addEventListener("click", function() {
         deleteTask(main);
     });
+
     number++;
     updateNumber();
 }

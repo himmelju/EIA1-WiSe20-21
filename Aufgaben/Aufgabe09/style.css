@@ -27,7 +27,7 @@ html, body{
     width: 400px;
     padding: 4px;
     margin-top: 20px;
-    align-items: left;
+    align-items: center;
     display: flex;
     justify-self: center;
     flex-direction: column;
@@ -48,13 +48,13 @@ html, body{
     color: #000000;
   }
 
-  form .myCheckbox {
+  #check {
     color: #d31515;
     position: absolute;
     left: 0%;
   }
 
-  form .myCheckbox:hover {
+  #check:hover {
     color: rgb(255, 255, 255);
     cursor: pointer;
   }
