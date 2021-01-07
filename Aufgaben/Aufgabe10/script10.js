@@ -11,13 +11,15 @@ var task = [{
         todosChecked: false
     }];
 //Variablen deklarieren (für #10 nichts geändert)
+//Variablen für done und opern deklarieren (#11)
 var inputDOMElement;
 var addButtonDOMElement;
 var todosDOMElement;
 var counterDOMElement;
 var doneDOMElement;
 var openDOMElement;
-//
+//für #10 nichts ändern
+//#11 done und open Elemente der Funktion hinzufügen
 window.addEventListener("load", function () {
     inputDOMElement = document.querySelector("#inputTodo");
     addButtonDOMElement = document.querySelector("#addButton");
@@ -29,7 +31,7 @@ window.addEventListener("load", function () {
     drawListToDOM();
 });
 //Funktion Liste der Tasks, Trahs Button und Checkbox
-//#10 ändern damit die neue ToDo oben in die Liste einsortiert wird
+//#10 ändern damit die neue ToDo oben in die Liste einsortiert wird (var schleife function)
 function drawListToDOM() {
     todosDOMElement.innerHTML = "";
     var schleife = function (index) {
@@ -52,6 +54,7 @@ function drawListToDOM() {
     updateCounter();
 }
 //Counter 
+//Aufagbe #11 done und open task counter hinzufügen 
 function updateCounter() {
     counterDOMElement.innerHTML = task.length + " in total";
     var countDoneElements = 0;
