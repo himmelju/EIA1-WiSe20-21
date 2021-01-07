@@ -63,8 +63,8 @@ function updateCounter() {
         else {
             countDoneElements++;
         }
-        openDOMElement.innerHTML = countOpenElements + "open";
-        doneDOMElement.innerHTML = countDoneElements + "done";
+        openDOMElement.innerHTML = countOpenElements + " open";
+        doneDOMElement.innerHTML = countDoneElements + " done";
     }
 }
 //Task erstellen
@@ -80,7 +80,6 @@ function addTodo() {
 }
 //Checkbox
 function toggleCheckState(index) {
-    task[index].todosChecked = !task[index].todosChecked;
     task[index].todosChecked = !task[index].todosChecked;
     drawListToDOM();
 }
