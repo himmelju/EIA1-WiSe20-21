@@ -1,5 +1,5 @@
 //Varibalen deklarieren
-//statt 2 Arrays soll 1 Array und ToDo Objekten genutzt werden (#10)
+//statt 2 Arrays soll 1 Array und ToDo Objekte genutzt werden (#10)
 var task = [{
         todosText: "Lorem",
         todosChecked: true
@@ -35,7 +35,7 @@ function drawListToDOM() {
     var schleife = function (index) {
         var todo = document.createElement("div");
         todo.classList.add("todo");
-        todo.innerHTML = "<span class='check " + todosChecked[index] + "'><i class='fas fa-check'></i></span>"
+        todo.innerHTML = "<span class='check " + task[index].todosChecked + "'><i class='fas fa-check'></i></span>"
             + task[index].todosText +
             "<span class='trash fas fa-trash-alt'></span>";
         todo.querySelector(".check").addEventListener("click", function () {
@@ -81,7 +81,7 @@ function addTodo() {
 //Checkbox
 function toggleCheckState(index) {
     task[index].todosChecked = !task[index].todosChecked;
-    todosChecked[index] = !todosChecked[index];
+    task[index].todosChecked = !task[index].todosChecked;
     drawListToDOM();
 }
 //Task löschen
