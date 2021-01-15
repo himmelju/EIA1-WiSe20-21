@@ -113,4 +113,47 @@ function deleteTodo(index) {
     drawListToDOM();
 }
 
+//Artyom (Spracheingabe) Funktion - Tipps auf https://sdkcarlos.github.io/sites/artyom.html
+
+window.addEventListener("load", function () {
+    var artyom = new artyom();
+    artyom.addCommands ({
+        indexes: ["Meine neue Task ist"],
+        smart: true,
+        action: function(i, wildcard) {
+            task.unshift({
+                todosText: wildcard,
+                todosChecked: false
+            });
+            drawListToDOM();
+        }
+    });
+//Buttons start und stop der Spracheingabe
+
+document.querySelector("#startCommand") .addEventListener("click", function() {
+    startmyArtyom();
+});
+
+document.querySelector("endCommand") .addEventListener("click", function() {
+    endmyArtyom();
+});
+
+//Funktionen für die Buttons Start und Ende der Spracheingabe
+
+function startmyArtyom() {
+    artyom.initialize( {
+        lang: "de-DE",
+        continious:false,
+        listen:true,
+        debug:true,
+        speed:1
+    });
+}
+
+function endmyArtyom() {
+    artyom.fatality();
+}
+
+});
+
 //sourceMappingURL=script10.js.map
