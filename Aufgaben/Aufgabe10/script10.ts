@@ -19,7 +19,7 @@ var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
 var doneDOMElement: HTMLElement;
 var openDOMElement: HTMLElement;
-var myartyom = false;
+//var myartyom = false;
 
 //für #10 nichts ändern
 //#11 done und open Elemente der Funktion hinzufügen
@@ -99,15 +99,15 @@ function addTodo() {
         inputDOMElement.value = "";
         drawListToDOM();
     }
-    if (myartyom == true) {
-        task.unshift({
-            todosText: Text,
-            todosChecked: false
-        });
-        myartyom = false;
-        updateCounter();
-        drawListToDOM();
-    }
+    //if (myartyom == true) {
+        //task.unshift({
+            //todosText: Text,
+            //todosChecked: false
+        //});
+        //myartyom = false;
+        //updateCounter();
+        //drawListToDOM();
+    //}
 }
 
 //Checkbox
@@ -131,7 +131,7 @@ window.addEventListener("load", function () {
         indexes: ["Meine neue Task ist *"],
         smart: true,
         action: function(i, wildcard) {
-            myartyom = true;
+            //myartyom = true;
             task.unshift({
                 todosText: wildcard,
                 todosChecked: false
@@ -154,13 +154,16 @@ window.addEventListener("load", function () {
 //Funktionen für die Buttons Start und Ende der Spracheingabe
 
 function startmyArtyom() {
-   artyom.initialize( {
+    artyom.fatality();
+    setTimeout (function () {
+      artyom.initialize( {
         lang: "de-DE",
         continious:true,
         listen:true, 
         interimResults: true,
-        debug:true,
+        debug:true,   
     });
+    }, 200);
 }
 
 function endmyArtyom() {
