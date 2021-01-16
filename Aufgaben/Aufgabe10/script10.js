@@ -105,6 +105,14 @@ window.addEventListener("load", function () {
             drawListToDOM();
         }
     });
+    //Buttons start und stop der Spracheingabe
+    document.getElementById("startCommand").addEventListener("click", function () {
+        startmyArtyom();
+        artyom.say("Sage Meine neue Task ist und deine Task die du hinzufügen willst");
+    });
+    document.getElementById("endCommand").addEventListener("click", function () {
+        endmyArtyom();
+    });
     //Funktionen für die Buttons Start und Ende der Spracheingabe
     function startmyArtyom() {
         artyom.initialize({
@@ -118,14 +126,6 @@ window.addEventListener("load", function () {
     function endmyArtyom() {
         artyom.fatality();
     }
-    //Buttons start und stop der Spracheingabe
-    document.querySelector("#startCommand").addEventListener("click", function () {
-        startmyArtyom();
-        artyom.say("Sage Meine neue Task ist und deine Task die du hinzufügen willst");
-    });
-    document.querySelector("#endCommand").addEventListener("click", function () {
-        endmyArtyom();
-    });
 });
 //sourceMappingURL=script10.js.map
 //# sourceMappingURL=script10.js.map
