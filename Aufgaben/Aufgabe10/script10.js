@@ -103,7 +103,7 @@ function deleteTodo(index) {
 }
 //Artyom (Spracheingabe) Funktion - Tipps auf https://sdkcarlos.github.io/sites/artyom.html
 window.addEventListener("load", function () {
-    var artyom = new artyom();
+    var artyom = new Artyom();
     artyom.addCommands({
         indexes: ["Meine neue Task ist *"],
         smart: true,
@@ -119,7 +119,7 @@ window.addEventListener("load", function () {
     //Buttons start und stop der Spracheingabe
     document.getElementById("startCommand").addEventListener("click", function () {
         startmyArtyom();
-        artyom.say("Halluuu sag meine neue Task ist und deine Task die du hinzufügen willst");
+        artyom.say("Hallo sag meine neue Task ist und deine Task die du hinzufügen willst");
     });
     document.getElementById("endCommand").addEventListener("click", function () {
         endmyArtyom();
