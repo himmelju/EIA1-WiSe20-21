@@ -95,7 +95,7 @@ function deleteTodo(index) {
 window.addEventListener("load", function () {
     var artyom = new artyom();
     artyom.addCommands({
-        indexes: ["Meine neue Task ist"],
+        indexes: ["Meine neue Task ist *"],
         smart: true,
         action: function (i, wildcard) {
             task.unshift({
@@ -105,26 +105,27 @@ window.addEventListener("load", function () {
             drawListToDOM();
         }
     });
-    //Buttons start und stop der Spracheingabe
-    document.querySelector("#startCommand").addEventListener("click", function () {
-        startmyArtyom();
-    });
-    document.querySelector("endCommand").addEventListener("click", function () {
-        endmyArtyom();
-    });
     //Funktionen für die Buttons Start und Ende der Spracheingabe
     function startmyArtyom() {
         artyom.initialize({
             lang: "de-DE",
-            continious: false,
+            continious: true,
             listen: true,
+            interimResults: true,
             debug: true,
-            speed: 1
         });
     }
     function endmyArtyom() {
         artyom.fatality();
     }
+    //Buttons start und stop der Spracheingabe
+    document.querySelector("#startCommand").addEventListener("click", function () {
+        startmyArtyom();
+        artyom.say("Sage Meine neue Task ist und deine Task die du hinzufügen willst");
+    });
+    document.querySelector("#endCommand").addEventListener("click", function () {
+        endmyArtyom();
+    });
 });
 //sourceMappingURL=script10.js.map
 //# sourceMappingURL=script10.js.map
