@@ -1,3 +1,4 @@
+var test = 123;
 //Varibalen deklarieren
 //statt 2 Arrays soll 1 Array und ToDo Objekte genutzt werden (#10)
 var task = [{
