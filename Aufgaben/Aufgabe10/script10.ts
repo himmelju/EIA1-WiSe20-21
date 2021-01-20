@@ -128,6 +128,7 @@ function deleteTodo(index) {
 window.addEventListener("load", function () {
     var artyom = new Artyom();
     artyom.addCommands ({
+        lang: "de-DE",
         indexes: ["Meine neue Task ist *"],
         smart: true,
         action: function(i, wildcard) {
